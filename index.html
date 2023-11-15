@@ -6,7 +6,38 @@
     <title>Weather App</title>
   </head>
   <body>
-    <h1>My Weather App</h1>
+    <header>
+      <form id="search-form">
+        <input
+          type="search"
+          placeholder="Enter a city..."
+          required
+          class="input"
+          id="input"
+        />
+        <input type="submit" value="Search" class="submit" id="submit" />
+      </form>
+    </header>
+    <main>
+      <div class="city-details">
+        <div>
+          <h1 class="current-city" id="current-city">Lisboa</h1>
+          <br />
+          <p class="current-details">
+            <span id="current-date">Wednesday 11:43</span>, moderate rain
+            <br />
+            Humidity: <strong>87%</strong>, Wind:<strong>7.2km/h</strong>
+          </p>
+        </div>
+        <div class="current-temperature">
+          <span class="current-temperature-icon">🌞</span>
+          <span class="current-temperature-degrees" id="current-degrees"
+            >24</span
+          >
+          <span class="current-temperature-unit">ºC</span>
+        </div>
+      </div>
+    </main>
     <footer>
       Coded by
       <a href="https://github.com/AlexandraHockett88" target="_blank"
